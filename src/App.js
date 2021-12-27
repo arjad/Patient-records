@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import data from "./MOCK_DATA.json";
+import Chart from "./charts";
 
 function App() 
 {
   const [search, setsearch] = useState("")
   return (
   <div className="App bg-dark p-5 ">
+  <Chart/>
   <br/>
     <h3 className="text-white">SEARCH BY NAME,GENDER, EMAIL, PLACE</h3>
     <input className="form-control" placeholder="search by patient name" onChange={(e)=>setsearch(e.target.value)}/>
